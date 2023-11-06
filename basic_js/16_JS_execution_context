@@ -1,0 +1,52 @@
+   Javascript Execution Context
+
+   { }  -> Global Execution Context
+
+   Type of Execution Context:
+     i) - Global Execution Context
+     ii) - Function Execution Context
+     iii) - Eval Execution Context
+
+
+
+      ____________________
+     |                    | 
+     |    Javascrip       |    --> Memory creation phase    (In this phase only Memory alocate for variable)
+     |       code         |    
+     |                    |    --> Execution phase   
+     |____________________|
+
+
+
+
+   =>  Code File
+      
+      let a = 10
+      let b = 20
+      function addNum(num1, num2){
+            let total = num1 + num2
+            return total
+      }
+      let result1 = addNum(a,b)
+      let result2 = addNum(15,30)
+
+
+
+
+      => Phases Of Program Execution
+         1- Global Execution   -> this (alocate in this)
+
+         2- Memory Phases:
+                   a -> undifined
+                   b -> undifined
+                   addNum -> defination
+                   result1 -> undifined
+                   result2 -> defination
+       
+         3- Execution Phases:
+                   a <- 10 (store)               _______________________________
+                   b <- 20 (store)              |                               |
+                   addNum --------------------->|   new variable environment    |  
+                                                |             +                 |
+                                                |     execution thread          |
+                                                |_______________________________|                              
