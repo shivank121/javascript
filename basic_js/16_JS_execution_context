@@ -46,7 +46,23 @@
          3- Execution Phases:
                    a <- 10 (store)               _______________________________
                    b <- 20 (store)              |                               |
-                   addNum --------------------->|   new variable environment    |  
+                   addNum --------------------->|   new variable environment    |   --> This is delete after complete execution once  
                                                 |             +                 |
                                                 |     execution thread          |
-                                                |_______________________________|                              
+                                                |_______________________________|
+                                                                |
+                                                                |
+                                                                |
+                                                                V    _____________________________
+                                                            Memory Phase                          |
+                                                                |                                 |
+                                                                |                                 |
+                                                                |                                 | -- repeat again and again
+                                                                V                                 |
+                                                            Execution Phase -> (value Assign)     |
+                                                                    ______________________________|
+                                                                                        
+
+
+
+=> Call Stack:
