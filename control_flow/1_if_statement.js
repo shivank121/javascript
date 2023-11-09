@@ -4,7 +4,6 @@ if(true){                         // --->  Compair any thing If "True" Block of 
 }
 
 
-<<<<<<< Updated upstream
 
 const balance = 1000
 
@@ -43,8 +42,7 @@ const emtyObj = {}
 if(Object.keys(emtyObj).length===0){       // access all keys of though this ( Object.keys(object_name) )
       console.log("object is errr")
 }
-=======
+
 if(2 != 2){
       console.log("Hii")
 }
->>>>>>> Stashed changes
