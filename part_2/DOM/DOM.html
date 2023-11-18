@@ -10,6 +10,16 @@
             background-color: black;
             color: aliceblue;
       }
+      .partTow{
+            background-color: red;
+            color: green;
+            font-size: 50px;
+            text-align: center;
+      }
+      .days{
+            font-size: 25px;
+            margin-bottom: 10px;
+      }
 </style>
 
 <body>
@@ -21,5 +31,66 @@
             <h1 class="heading" id="title"> Lorem ipsum dolor sit.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolores.</p>
       </div>
+
+      <!-- part -2 -->
+      <div class="partTow" >Part - 2</div>
+      <div class="parent" >
+            <div class="days">Monday</div>
+            <div class="days">Tuesday</div>
+            <div class="days">Wednesday</div>
+            <div class="days">Thursday</div>
+      </div>
+
+      <!-- part-3 -->
+      <div class="partTow" >Part - 3</div>
+      <div  id="part3"></div>
+   
+
+
+
+      
+      <!-- Part - 2 -->
+      <script>
+            const parent = document.querySelector('.parent')
+            // console.log(parent)
+            // console.log(parent.children) // access child of any parent like this 
+            // console.log(parent.children[0]) // access children based on index number
+            // console.log(parent.children[0].innerHTML)
+
+            //=> Use for loop: 
+            // for (let index = 0; index < parent.children.length; index++) {
+            //       // console.log(index)
+            //       console.log(parent.children[index].innerHTML)   // dispay each days one by one   
+            // }
+
+            // parent.children[1].style.color = 'brown' // -> change color 
+            
+            // => Access First or last child directally:
+            // console.log(parent.firstElementChild)
+            // console.log(parent.lastElementChild)
+
+            // => To know parent element from child:
+            const dayOne = document.querySelector('.days')
+            // console.log(dayOne.parentElement)
+            
+            // => also target next element:
+            // console.log(dayOne.nextElementSibling)
+      </script>
+
+
+
+      <!-- part - 3 -->
+      <script>
+            const div = document.createElement('h1')
+            console.log(div)
+            div.className = "shiv"
+            div.id = Math.round(Math.random() * 10 + 1)
+            div.setAttribute('title', 'heading')   // --> Add Custom attributes  
+            div.style.backgroundColor = 'blue'
+            div.style.padding = '20px'
+            const addText = document.createTextNode("Hello Shivank bhai make be practicle")
+            div.appendChild(addText)
+            document.getElementById('part3').appendChild(div)
+      </script>
 </body>
 </html>
