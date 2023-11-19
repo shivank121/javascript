@@ -20,6 +20,10 @@
             font-size: 25px;
             margin-bottom: 10px;
       }
+      .language li{
+            font-size: 30px;
+            margin-bottom: 10px;
+      }
 </style>
 
 <body>
@@ -43,12 +47,20 @@
 
       <!-- part-3 -->
       <div class="partTow" >Part - 3</div>
-      <div  id="part3"></div>
-   
-
-
-
+      <div  id="part3"></div>    // all the thing done within part -3 script
       
+      
+      <!-- part -4 -->
+      <div class="partTow" >Part - 4</div>
+      <div class="list">
+            <ul class="language">
+                  <li id="list-item">HTML</li>
+            </ul>
+      </div>
+
+
+
+
       <!-- Part - 2 -->
       <script>
             const parent = document.querySelector('.parent')
@@ -74,7 +86,7 @@
             // console.log(dayOne.parentElement)
             
             // => also target next element:
-            // console.log(dayOne.nextElementSibling)
+            // console.log(dayOne.nextElementSibling)  // --> Target next element
       </script>
 
 
@@ -82,7 +94,7 @@
       <!-- part - 3 -->
       <script>
             const div = document.createElement('h1')
-            console.log(div)
+            // console.log(div)
             div.className = "shiv"
             div.id = Math.round(Math.random() * 10 + 1)
             div.setAttribute('title', 'heading')   // --> Add Custom attributes  
@@ -91,6 +103,26 @@
             const addText = document.createTextNode("Hello Shivank bhai make be practicle")
             div.appendChild(addText)
             document.getElementById('part3').appendChild(div)
+      </script>
+
+      <!-- part -4 -->
+      <script>
+            function addLanguage(langName){
+                  const lang = document.createElement('li')
+                  lang.appendChild(document.createTextNode("Python"))
+                  document.querySelector('.language').appendChild(lang)
+            }
+            addLanguage()
+
+            //=> Edit
+            const secondLang = document.querySelector("li:nth-child(2)")
+            const newli = document.createElement('li')
+            newli.textContent = "mojo"
+            secondLang.replaceWith(newli)
+
+            // =>Edit
+            const firstLang = document.querySelector("li:firt-child")
+            firstLang.outerHTML = '<li>TypeScript </li>'
       </script>
 </body>
 </html>

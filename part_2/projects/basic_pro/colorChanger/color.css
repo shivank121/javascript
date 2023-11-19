@@ -1,0 +1,36 @@
+.heading{
+      text-align: center;
+}
+.btn-box{
+      display: flex;
+      justify-content: center;
+}
+
+.button{
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      margin:0px 20px 0px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: blue; */
+}
+
+#gray{
+      background-color: gray;
+}
+#white{
+      background-color:rgb(197, 191, 191);
+}
+#blue{
+      background-color: blue;
+}
+#yellow{
+      background-color: yellow;
+}
+
+#reset{
+      border: 2px solid pink;
+      cursor: pointer;
+}
