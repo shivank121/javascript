@@ -1,0 +1,16 @@
+.input-box{
+  margin-bottom: 10px;
+}
+.input-box label{
+   font-size: 20px;
+
+}
+.input-box input{
+      font-size: 19px;
+      margin-left: 5px;
+      padding: 5px;
+}
+
+.submit-btn v+g0button{
+      font-size: 27px;
+}
