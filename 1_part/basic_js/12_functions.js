@@ -91,6 +91,7 @@ function handleObject(anyObject){
       console.log(`UserName is ${anyObject.username} and price is ${anyObject.price}`)
 }
 handleObject(hii)
+
 // pass object directly
 handleObject({
       username:"shivank",
